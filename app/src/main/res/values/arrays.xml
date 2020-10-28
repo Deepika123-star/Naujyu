@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="reasonsforcancellation">
+        <item>Select an Issue</item>
+        <item>Scheduled Service</item>
+        <item>Breakdown</item>
+        <item>Puncture</item>
+    </array>
+</resources>

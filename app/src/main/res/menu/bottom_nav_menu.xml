@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="HOME"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/aboutus"
+        android:title="ABOUT US"
+        android:icon="@drawable/ic_about_us"/>
+
+    <item android:id="@+id/contactus"
+        android:title="CONTACT US"
+        android:icon="@drawable/ic_contact_us"/>
+
+
+    <item android:id="@+id/tc"
+        android:title="@string/t_c"
+        android:icon="@drawable/ic_tc"/>
+
+    <item android:id="@+id/pro"
+        android:title="PROFILE"
+        android:icon="@drawable/ic_account"/>
+</menu>

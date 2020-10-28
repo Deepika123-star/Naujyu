@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="@dimen/dp_16"
+        android:background="@drawable/all_round_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="I have"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintStart_toStartOf="@+id/tv_location_picker" />
+
+            <LinearLayout
+                android:id="@+id/ll_txt_current_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:background="@drawable/bg_blue_outline">
+
+                <Spinner
+                    android:id="@+id/vehicletype"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:spinnerMode="dropdown"
+                    android:overlapAnchor="false"
+                    tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                    android:dropDownWidth="match_parent"
+                    android:dropDownVerticalOffset="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select Vechicle Brand"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_blue_outline">
+
+                    <Spinner
+                        android:id="@+id/brandtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:spinnerMode="dropdown"
+                        android:overlapAnchor="false"
+                        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                        android:dropDownWidth="match_parent"
+                        android:dropDownVerticalOffset="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select Vechicle Model"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_blue_outline">
+
+                    <Spinner
+                        android:id="@+id/modeltype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:spinnerMode="dropdown"
+                        android:overlapAnchor="false"
+                        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                        android:dropDownWidth="match_parent"
+                        android:dropDownVerticalOffset="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Select Fuel Type"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/bg_blue_outline">
+
+                    <Spinner
+                        android:id="@+id/fueltype"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:spinnerMode="dropdown"
+                        android:overlapAnchor="false"
+                        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                        android:dropDownWidth="match_parent"
+                        android:dropDownVerticalOffset="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="My Vehicle's Registration Number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AB23XY3940"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etVehicleNumber"
+                        android:inputType="textPostalAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:maxLength="10"
+                        android:fontFamily="@font/opensans_semibold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="My Vehicle's Issue date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Issue Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/issuedate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:inputType="date"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edit_text_border"
+                android:gravity="start"
+                android:hint="Reason for Request"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="4"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:minLines="4"
+                android:padding="@dimen/dp_8" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_location_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:visibility="gone"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/ic_location_on_red_24dp"
+                android:hint="@string/hint_location"
+                android:padding="@dimen/dp_30" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add a Landmark"
+                android:layout_marginTop="@dimen/dp_16"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                    android:id="@+id/places_autocomplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:inputType="textPostalAddress"
+                    android:padding="14dp"
+                    android:fontFamily="@font/opensans_semibold"
+                    app:pacv_googleMapsApiKey="@string/location_api_key_id"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/submit"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</com.google.android.material.card.MaterialCardView>
